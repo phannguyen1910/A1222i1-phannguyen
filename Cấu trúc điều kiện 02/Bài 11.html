@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+let a = +prompt("Tổng tiền lương nhận được là :");
+let b = +prompt("Các khoản được miễn thuế : ");
+let c = +prompt(" Các khoản giảm trừ :");
+ let pct = a - b;
+ let tntt= pct - c;
+ let tncncn = 0;
+ let d = 0;
+ if (tntt<5000000){
+     d= 0.05;
+ } else if (tntt>5000000 & tntt <10000000){
+     d = 0.1;
+ } else if ( tntt >10000000 & tntt < 18000000){
+     d= 0.15;
+ } else if (tntt>18000000 & tntt < 32000000){
+     d= 0.2;
+ } else if ( tntt>32000000 & tntt< 52000000){
+     d=0.25;
+ } else if ( tntt > 52000000 & tntt < 80000000){
+     d=0.3;
+ } else d= 0.35;
+  tncncn = tntt * d;
+  document.write(" Thu nhập thế cá nhân cần nộp là :" + tncncn);
+</script>
+</html>

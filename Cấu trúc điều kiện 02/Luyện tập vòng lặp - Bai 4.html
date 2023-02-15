@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let n = +prompt(" Nhập số cần hiện");
+    let firstnum = 0 ;
+    let secondnum =1;
+    let fibo;
+    let sum;
+    for ( i=1 ; i< n ; i++ ){
+        fibo = firstnum + secondnum
+        firstnum = secondnum;
+         secondnum = fibo;
+         if (fibo % 5 == 0 )
+             document.write("Số chia hết cho 5 là " + fibo + "<br>");
+    }
+
+
+</script>
+</html>
