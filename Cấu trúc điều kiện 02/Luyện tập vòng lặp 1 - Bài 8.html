@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+        let num1 = +prompt("Nhập khoảng muốn đoán (bắt đầu từ số : )");
+        let num2 = +prompt("Nhập khoảng muốn đoán (kết thúc từ số : )");
+        numRandom = Math.floor(Math.random() * (num2 - num1 + 1) ) + num1;
+        let i = 0;
+        while (i < 3){
+            let num3 = + prompt("Nhập số bạn muốn đoán:");
+            if (num3>numRandom){
+                alert("Số bạn đoán lớn hơn, hãy đoán lại");
+            }else if (num3<numRandom){
+                alert("Số bạn đoán nhỏ hơn, hãy đoán lại");
+            }else alert("Chúc mừng");
+            i++;
+        }
+
+</script>
+</body>
+</html>
