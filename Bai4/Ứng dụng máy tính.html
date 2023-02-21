@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng máy Tính</title>
+</head>
+<body>
+<h1></h1>
+<table>
+    <tr>
+        <td colspan="2">
+            <input type="number" id="num1">
+        </td>
+        <td colspan="2">
+            <input type="number" id="num2">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="cong()">Addtion(+)</button>
+        </td>
+        <td>
+            <button type="button" onclick="tru()">Subtraction(-)</button>
+        </td>
+        <td>
+            <button type="button" onclick="nhan()">Multiple(*)</button>
+        </td>
+        <td>
+            <button type="button" onclick="chia()">Division(/)</button>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function cong() {
+        let num1 = document.getElementById("num1").value;
+        let n1 = parseInt(num1);
+        let num2 = document.getElementById("num2").value;
+        let n2 = parseInt(num2);
+        let tong;
+        tong = n1 + n2;
+        document.getElementById("result").innerText = "Giá Trị Cần Tìm : " + tong;
+    }
+
+    function tru() {
+        let num1 = document.getElementById("num1").value;
+        let n1 = parseInt(num1);
+        let num2 = document.getElementById("num2").value;
+        let n2 = parseInt(num2);
+        let hieu;
+        tong = n1 - n2;
+        document.getElementById("result").innerText = "Giá Trị Cần Tìm : " + tong;
+    }
+
+    function nhan() {
+        let num1 = document.getElementById("num1").value;
+        let n1 = parseInt(num1);
+        let num2 = document.getElementById("num2").value;
+        let n2 = parseInt(num2);
+        let tich;
+        tong = n1 * n2;
+        document.getElementById("result").innerText = "Giá Trị Cần Tìm : " + tong;
+    }
+
+    function chia() {
+        let num1 = document.getElementById("num1").value;
+        let n1 = parseInt(num1);
+        let num2 = document.getElementById("num2").value;
+        let n2 = parseInt(num2);
+        let thuong;
+        tong = n1 / n2;
+        if (n2==0){
+            document.write("Nhap Lai : ");
+        }
+    }
+    document.getElementById("result").innerText = "Giá Trị Cần Tìm : " + tong;
+    }
+</script>
+</body>
+</html>
