@@ -8,12 +8,12 @@
 <script>
  let arraynumbers = [];
  let s=0;
- for (let i=0; i<5; i++){
+ for ( i=0; i<5; i++){
      arraynumbers[i]= +prompt("Nhập vào các số:");
      if (arraynumbers[i]<0){
-
-     }
-
+      s = arraynumbers[i]++;
+      document.write("Các số nguyên âm là: " + s + "<br>");
+     } else document.write("Các số nguyên dương là: " + arraynumbers[i] + "<br>");
  }
 </script>
 </body>
