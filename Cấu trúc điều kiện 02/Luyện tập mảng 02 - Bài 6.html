@@ -5,6 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let str = prompt("Nhập vào chuỗi ký tự ");
+    let strArr = [];
+       for (let i = 0; i < str.length; i++) {
+         strArr[i] = str.slice(i, i + 1);
+        if (strArr[i] === "-") {
+         strArr.splice(i, 1, "_");}}
+    document.write(strArr.join(""));
+</script>
 </body>
 </html>
