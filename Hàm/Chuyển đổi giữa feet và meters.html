@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Chuyen Doi Feet Va Meters</p>
+<input type="text" id="nhap" placeholder="Nhap Gia Tri Can Doi">
+<select id="selection">
+    <option value="1">Feet --> Meter</option>
+    <option value="2">Meter --> Feet</option>
+</select>
+<input type="text" id="result" placeholder="Gia Tri Sau Khi Chuyen Doi">
+<button id="onclick" onclick="convert()">Convert</button>
+<script>
+    let  array = document.getElementById("selection");
+    let meter, feet;
+
+    function convert() {
+        let nhap = document.getElementById("nhap vao mot gia tri").value;
+        if (array.value == 1) {
+            meter = nhap * 0.305;
+            document.getElementById("result").value = +meter;
+        }
+        if (array.value == 2) {
+            feet = nhap * 3.279;
+            document.getElementById("result").value = +feet;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    function check() {
+        let array = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "a", "c", "e", "g", "i", "l"];
+        let a = prompt("Nhap ki tu bat ki : ");
+        for (let i = array[0]; i < array.length; i++) {
+            if (a == array[i]) {
+                count++;
+            } else {
+                return -1;
+            }
+        }
+        document.write("Co ki Tu Nhu Vay Trong Mang");
+    }
+
+    check();
+</script>
+
+</body>
+</html>

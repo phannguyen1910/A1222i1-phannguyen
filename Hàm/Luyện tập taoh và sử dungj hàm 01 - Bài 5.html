@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="tienganh"/>
+<input type="button" value="search" onclick="chomSao()"/>
+<p id="tiengviet"></p>
+<script>
+    let tenChomSao = document.getElementById("tienganh");
+
+    let arrTA = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrTV = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major ", "Leo"];
+    let dem = 0;
+    function chomSao() {
+        for (let i = 0; i < arrTA.length; i++) {
+            if (arrTA[i] === tenChomSao.value) {
+                dem = 0;
+                document.getElementById("tiengviet").innerHTML = "<input value="+ arrTV[i] + " />" ;
+                break;
+            } else {
+                dem++;
+            }
+        }
+        if (dem !== 0) {
+            alert("Không tìm thấy dữ liệu");
+        }
+    }
+</script>
+</body>
+</html>
