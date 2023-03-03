@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    let arraynames = [];
-    for ( i=0; i<10; i++){
-        arraynames[i] = prompt(" Nhập vào các số: ");}
-    let v = +prompt("Nhập phần tử số nguyên:");
-    for ( i=0; i< 5; i++){
-    if (v == arraynames[i]){
-        document.write(v.splice(0,arraynames[i]));
-    }}
+    let arrNum =[1,2,3,4,5,6,7,8,9,10];
+    let arrV =+prompt("Nhập vào số V nguyên bất kỳ để kiểm tra: ")
+    for (let i = 0; i <10 ; i++) {
+        if (arrNum[i]===arrV){
+            arrNum.splice(i,1,);
+            arrNum.push(0);
+        }
+    }
+    document.write(arrNum);
 </script>
 </body>
 </html>

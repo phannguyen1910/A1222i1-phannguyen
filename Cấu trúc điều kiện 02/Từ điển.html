@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txtValue">
+<input type="button" value="Dịch" onclick="transform()">
+<div id="result"></div>
+<script>
+    let english = ["black", "white", "blue", "green", "yellow", "pink", "orange"];
+    let vietnamese = ["màu đen", "màu trắng", "màu xanh dương", "màu xanh lá", "màu vàng", "màu hồng", "màu cam"];
+    function trans() {
+        words = document.getElementById("txtValue").value;
+        for (i = 0; i < english.length; i++) {
+            if (words === english[i]) {
+                document.write(vietnamese[i]);
+            }
+        }
+    }
+</script>
+</body>
+</html>
