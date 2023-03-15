@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tính lương Nhân viên</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số tiền lương nhân viên: ");
+    let b = 0;
+    let sum = 0;
+    if (a = 15000000){
+        b = a * (20/100);
+        sum = a - b;
+        document.write("Tiền thuế của nhân viên là:" + b + "<br>" );
+        document.write("Lương ròng của nhân viên là:" + sum);
+    } else if (7000000<a<15000000){
+        b = a *(10/100);
+        sum = a-b;
+        document.write("Tiền thuế của nhân viên là:" + b + "<br>");
+        document.write("Lương ròng của nhân viên là:" + sum);
+    } else if (a<7000000){
+        b = a *(5/100);
+        sum = a-b;
+        document.write("Tiền thuế của nhân viên là:" + b + "<br>");
+        document.write("Lương ròng của nhân viên là:" + sum);
+    }
+</script>
+
+</body>
+</html>

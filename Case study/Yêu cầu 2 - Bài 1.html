@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tam giác </title>
+</head>
+<body>
+<script>
+    let n =5;
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= i; j++) {
+            if (i == n || j == i || j == 1 ) {
+                document.write("*");
+            }
+            else
+                document.write("&nbsp;&nbsp");
+        }
+        document.write("<br>");
+    }
+
+</script>
+</body>
+</html>

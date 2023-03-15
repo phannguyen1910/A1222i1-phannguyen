@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let c = +prompt(" Nhập kích thước của mảng:");
+    let a = [];
+    let b = [];
+    let sum = 0;
+    for (let i = 0; i<c ; i++){
+        a[i] = parseInt(prompt("Nhập vào chuỗi a:"));
+    } document.write(a.join(',') + "<br>");
+    for (let i =0; i<c; i++){
+        sum = sum + a[i];
+        b[i] = sum;
+    } document.write(b.join(','));
+
+</script>
+</body>
+</html>
