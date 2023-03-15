@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào độ dài mảng c:");
+    let b = +prompt(" Nhập vào độ dài mảng d: ");
+    let c = [];
+    let d = [];
+    let e = [];
+    for (let i = 0; i < a; i++) {
+        c[i] = parseInt(prompt("NHập vào các số c:"));
+    }
+    document.write("Mảng c : " + c + "<br>");
+    for (let i = 0; i < b; i++) {
+        d[i] = parseInt(prompt("NHập vào các số d:"));
+    }
+    document.write("Mảng d: " + d + "<br>");
+    for (let i = 0; i < d.length; i++) {
+        let cut = false;
+        for (let j = 0; j < c.length; j++) {
+            if (c[j] == d[i]) {
+                cut = true;
+                break;
+            }
+        }
+        if (!cut) {
+            e.push(d[i]);
+        }
+    }
+    document.write("Mảng e :" + e + "<br>");
+
+
+</script>
+</body>
+</html>
