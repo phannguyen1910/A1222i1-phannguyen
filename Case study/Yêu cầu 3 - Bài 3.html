@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Phân số lớn nhất</title>
+</head>
+<body>
+<script>
+    let numerators = [5, 2, 5];
+    let denominators = [6, 4, 3];
+    let maxFraction = (numerators[0] / denominators[0]);
+    let index;
+    for (let i = 0; i < numerators.length; i++) {
+        if (maxFraction < (numerators[i] / denominators[i])) {
+            maxFraction = (numerators[i] / denominators[i]);
+            index = i;
+        }
+    }
+    document.write("Giá trị số thập phân lớn nhất là:" + maxFraction + "<br>");
+    document.write(" Vị trí của số thập phân lớn nhất là: " + index);
+</script>
+</body>
+</html>

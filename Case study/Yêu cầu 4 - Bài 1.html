@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển hóa kí tự</title>
+</head>
+<body>
+<script>
+    function titleCase(string) {
+        let str = string.toLowerCase().split(" ");
+        for (let i = 0; i < str.length; i++) {
+            str [i] = str[i][0].toUpperCase() + str[i].slice(1);
+        }
+        return str.join(" ");
+    }
+
+    let a = titleCase('tRuong TaN HAI');
+    document.write(a);
+</script>
+</body>
+</html>

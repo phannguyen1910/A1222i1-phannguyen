@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số lượng kí tự khác nhau</title>
+</head>
+<body>
+<script>
+    let str = 'cabca';
+    let sum = 0;
+    for (let i=0; i< str.length; i++){
+        if (str[0] != str[i]){
+            sum ++;
+        }
+    }
+    document.write( "Số lương kí tự khác nhau là :" + sum);
+</script>
+</body>
+</html>

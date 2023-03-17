@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let row = 3;
+        let col = 2;
+        let maTran = [];
+        let check = true;
+        let tong = 0;
+
+        for (let i = 0; i < row; i++){
+            maTran[i] = [];
+            document.write(" Hàng " +i + "<br>" )
+            for (let j = 0; j < col;j++){
+                maTran[i][j] = +prompt("Nhập phần tử vào mảng " + (i+1));
+                document.write(maTran[i][j] + "<br>");
+            }
+        }
+        function tinhtong() {
+            for (let i= 0 ; i< row ; i++){
+                for (let j = 0; i< col; i++){
+                    if (maTran[i][j] % 1 == maTran[i][j] && maTran[i][j] % maTran[i][j] == 1 ){
+                        check = true;
+                        document.write("Các số nguyên tố là: " + maTran[i][j] + "<br>");
+                        document.write("Tổng các số nguyên tố là " + tong++ );
+
+                    } else check = false;
+                }
+            }
+        }
+        tinhtong();
+
+    
+    </script>
+</body>
+</html>
