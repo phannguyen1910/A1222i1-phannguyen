@@ -7,22 +7,30 @@
 <body>
 <script>
     let m = +prompt("Nhập vào số hàng:");
-    let n = +prompt("Nhập vào số cột:");
+    let n = +prompt("NHập vào số cột:");
     let maTran = [];
-    let tong = 0;
-
     for (let i = 0; i < m; i++) {
         maTran[i] = [];
         document.write(" Hàng " + i + "<br>")
         for (let j = 0; j < n; j++) {
             maTran[i][j] = +prompt("Nhập phần tử vào mảng " + (i + 1));
             document.write(maTran[i][j] + "<br>");
-            if (maTran[i][j] % 2 == 0){
-                tong += maTran[i][j];
-            }
-            }
+        }
     }
-    document.write("Tổng các số chẵn là: " + tong);
+    let max = maTran[0][0];
+    let min = maTran[0][0];
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (maTran[i][j] > max){
+               max = maTran[i][j]
+            } else if (maTran[i][j] < min){
+               min = maTran[i][j];
+            }
+        }
+    }
+    document.write("Số lớn nhất là: " + max + "<br>");
+    document.write("Số nhỏ nhất là: " + min);
+
 
 </script>
 </body>
