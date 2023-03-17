@@ -21,7 +21,7 @@
     }
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
-            if (kiemTraSoNguyenTo(maTran[i][j]) == true) {
+            if (kiemTraSoNguyenTo(maTran[i][j]) === true) {
                 tong++;
                 document.write("Số Nguyên tố là: " + maTran[i][j] + " <br> ");
             }
@@ -29,16 +29,16 @@
     }
     document.write("Tổng " + tong);
 
-    function kiemTraSoNguyenTo(t){
-        if (t<2){
+    function kiemTraSoNguyenTo(t) {
+        if (t < 2) {
             return false;
         } else
-            for (let i = 2 ; i < Math.sqrt(t) ; i++) {
-                if (t % i == 0) {
+            for (let i = 2; i <= Math.sqrt(t); i++) {
+                if (t % i === 0) {
                     return false;
                 }
-                return true ;
             }
+            return true;
     }
 
 
